@@ -13,14 +13,3 @@ repos:
     rev: v1.2.3
     hooks:
     - id: flake8
-- repo: local
-  hooks:
-    - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
-      types: [python]
-      args:
-        [
-          "-rn", # Only display messages
-        ]
